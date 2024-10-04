@@ -95,6 +95,7 @@ a {
     height: 44px;
 }
 
+
 @media only screen and (max-width: 768px) {
     body {
       margin: 0;
@@ -117,12 +118,8 @@ a {
       margin-bottom: 20px;
     }
     
-    .tile {
-      flex-direction: column;
-    }
-    
     .image-container {
-      height: 5rem;
+      height: 7rem;
     }
     
     .tile-share-button {
