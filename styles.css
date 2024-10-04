@@ -94,3 +94,40 @@ a {
     width: 44px;
     height: 44px;
 }
+
+/* Add this media query to target mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      padding: 8px;
+      margin-top: 10px;
+    }
+    
+    .container {
+      width: 85%;
+      max-width: 400px;
+      margin: 10px;
+    }
+    
+    h1 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .tile {
+      flex-direction: column;
+    }
+    
+    .image-container {
+      height: 5rem;
+    }
+    
+    .tile-share-button {
+      width: 30px;
+      height: 30px;
+    }
+  }
