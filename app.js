@@ -2,7 +2,6 @@ const shareButtons = document.querySelectorAll('.tile-share-button')
 console.log(shareButtons)
 
 async function copyText(e) {
-
     e.preventDefault()
     const link = this.getAttribute('link')
     console.log(link)
@@ -18,11 +17,15 @@ shareButtons.forEach(shareButton =>
 
 const tileShareButton = document.querySelector('.tile-share-button');
 
-tileShareButton.addEventListener('click', () => {
-    const phoneNumber = '+5511999999999'; // substitua pelo número de telefone desejado
-    navigator.clipboard.writeText(phoneNumber).then(() => {
-        alert(`Número de telefone copiado: ${phoneNumber}`); // exibe um aviso ao usuário
+const tiles = document.querySelectorAll('.tile');
+
+tiles.forEach((tile) => {
+  tile.addEventListener('click', (event) => {
+    const phone = event.currentTarget.getAttribute('data-phone'); // Alteração aqui
+    navigator.clipboard.writeText(phone).then(() => {
+      alert(`Número de telefone copiado: ${phone}`);
     }).catch((error) => {
-        console.error('Erro ao copiar número de telefone:', error);
+      console.error('Erro ao copiar número de telefone:', error);
     });
+  });
 });
