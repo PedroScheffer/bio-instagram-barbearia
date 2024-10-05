@@ -135,3 +135,18 @@ a {
 a, button, input, textarea {
     -webkit-tap-highlight-color: transparent;
 }
+
+.tile-share-button {
+    /* ... */
+    cursor: pointer; /* adiciona um cursor de ponteiro para indicar que o elemento é clicável */
+  }
+  
+  .tile-share-button:hover {
+    /* ... */
+    background-color: #444; /* muda a cor de fundo ao passar o mouse por cima */
+  }
+  
+  .tile-share-button:active {
+    /* ... */
+    background-color: #666; /* muda a cor de fundo ao clicar */
+  }
