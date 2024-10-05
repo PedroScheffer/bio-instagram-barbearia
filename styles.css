@@ -43,12 +43,14 @@ header {
 
 h1 {
     font-size: 20px;
+    margin-top: 30px;
+    padding-top: 35px;
     margin-bottom: 30px;
     color: black;
 }
 h2{
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 a {
     text-decoration: none;
@@ -91,6 +93,7 @@ a {
 
 .image-container img {
     height: 100%;
+    margin-top: 50px;
 }
 
 .icon {
