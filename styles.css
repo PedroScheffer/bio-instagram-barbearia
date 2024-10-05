@@ -44,8 +44,12 @@ header {
 h1 {
     font-size: 20px;
     margin-bottom: 30px;
+    color: black;
 }
-
+h2{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
 a {
     text-decoration: none;
     color: rgb(240,240,240);
@@ -66,7 +70,7 @@ a {
 }
 
 .tile-share-button {
-    margin: 8px;
+    margin: 11px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -74,8 +78,8 @@ a {
 }
 
 .tile-share-button svg {
-    margin-left: 12px;
-    margin-top: 10px;
+    margin-left: 7px;
+    margin-top: 6px;
 }
 
 
@@ -127,3 +131,7 @@ a {
       height: 30px;
     }
   }
+
+a, button, input, textarea {
+    -webkit-tap-highlight-color: transparent;
+}
